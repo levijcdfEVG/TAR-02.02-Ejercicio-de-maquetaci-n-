@@ -28,6 +28,11 @@ body > :nth-child(2){
     float: left;
 }
 
+img{
+    width: 150px;
+    height: 150px;
+}
+
 
 footer{
     height: 100px;
