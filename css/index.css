@@ -1,3 +1,4 @@
+/* Contenedores principales */
 body{
     width: 1260px;
     height: 500px;
@@ -5,6 +6,8 @@ body{
     background-color: aqua;
 }
 
+
+/* Contenedores anidados */
 body > :nth-child(1){
     width: 780px; /*800 - 10 padding-left - 10 padding-right*/
     padding-left: 10px;
@@ -28,12 +31,6 @@ body > :nth-child(2){
     float: left;
 }
 
-img{
-    width: 150px;
-    height: 150px;
-}
-
-
 footer{
     height: 100px;
     width: 1260px;
@@ -41,10 +38,17 @@ footer{
     clear: both;
 }
 
+
+/* Contenidos de la caja izquierda */ 
 form{
     padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
 }
 
+
+/* Contenidos del formulario */
 form > input{
     display: block; /* Hace con que los elemento tipo input de dentro del form tenga propriedades de elemento de bloque */
 }
@@ -52,6 +56,7 @@ form > input{
 form > input[type="submit"]{
     width: 150px;
     background-color: #D8D8D8;
+    height: 20px;
 }
 
 form > input[type="text"]{
@@ -64,4 +69,22 @@ form > input[type="email"]{
 
 form > label{
     color: white;
+}
+
+
+/* Contenidos del footer */
+footer > p{
+    color: black;
+}
+
+
+/* Contenidos de la caja derecha */
+body > :nth-child(2) > img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Propriedades de etiquetas globales*/
+p{
+    color: wheat;
 }
