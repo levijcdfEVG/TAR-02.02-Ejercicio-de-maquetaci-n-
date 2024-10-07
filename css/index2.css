@@ -46,35 +46,45 @@ footer{
 /* Contenidos de la caja izquierda */ 
 form{
     padding-left: 70px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
     background-color: blue;
 }
 
 
 /* Contenidos del formulario */
-form > input{
+form > input, label{
     display: block; /* Hace con que los elemento tipo input de dentro del form tenga propriedades de elemento de bloque */
 }
 
-form > input[type="submit"]{
-    width: 150px;
+#centrar > input[type="submit"]{
+    width: 150px; 
     background-color: #D8D8D8;
-    height: 20px;
+    height: 2em;
+    margin: 2px;
 }
 
 form > input[type="text"]{
-    width: 500px;
+    width: 490px; /*Ancho 500 - padding left 10*/
+    padding-left: 10px;
+    height: 1.8em;
 }
 
 form > input[type="email"]{
-    width: 500px;
+    width: 490px; /*Ancho 500 - padding left 10*/
+    padding-left: 10px;
+    height: 1.8em;
 }
 
 form > label{
     color: white;
 }
 
+#centrar{
+    width: 50%;
+    margin: auto;
+}
 
 /* Contenidos del footer */
 footer > p{
