@@ -32,6 +32,13 @@ main > :nth-child(2){
     background-color: blue;
     float: left;
 }
+p{
+    color: white;
+}
+
+footer > p{
+    color: black;
+}
 
 img{
     width: 150px;
@@ -47,6 +54,9 @@ footer{
 
 form{
     padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
 }
 
 form > input{
@@ -56,6 +66,7 @@ form > input{
 form > input[type="submit"]{
     width: 150px;
     background-color: #D8D8D8;
+    height: 20px;
 }
 
 form > input[type="text"]{
