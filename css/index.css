@@ -46,7 +46,7 @@ form{
 }
 
 form > input{
-    display: block;
+    display: block; /* Hace con que los elemento tipo input de dentro del form tenga propriedades de elemento de bloque */
 }
 
 form > label{
