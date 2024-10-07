@@ -45,7 +45,10 @@ form{
     padding-left: 70px;
 }
 
-form > input[type="text"]{
-    size: 500px;
-    padding-left: 10px;
+form > input{
+    display: block;
+}
+
+form > label{
+    color: white;
 }

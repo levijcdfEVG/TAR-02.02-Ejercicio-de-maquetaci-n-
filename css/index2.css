@@ -43,3 +43,15 @@ footer{
     background-color: yellow;
     clear: both;
 }
+
+form{
+    padding-left: 70px;
+}
+
+form > input{
+    display: block;
+}
+
+form > label{
+    color: white;
+}
