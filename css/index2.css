@@ -7,6 +7,7 @@ body{
 
 main{
     background-image: url("../img/background.jpeg");
+    overflow: hidden; /*Si el contenido se sale del tamaño del main, se oculta*/
 }
 
 main > :nth-child(1){
@@ -50,6 +51,19 @@ form{
 
 form > input{
     display: block; /* Hace con que los elemento tipo input de dentro del form tenga propriedades de elemento de bloque */
+}
+
+form > input[type="submit"]{
+    width: 150px;
+    background-color: #D8D8D8;
+}
+
+form > input[type="text"]{
+    width: 500px;
+}
+
+form > input[type="email"]{
+    width: 500px;
 }
 
 form > label{
