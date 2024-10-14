@@ -33,6 +33,8 @@ main > :nth-child(2){
     padding-right: 30px;
     background-color: blue;
     float: left;
+    position: relative; /* Se le añade posicionamiento relativo para que las cajas con posicionamiento absoluto de adentro se fijen con respecto a este contenedor */
+    overflow: scroll;
 }
 
 footer{
@@ -93,12 +95,33 @@ footer > p{
 
 
 /* Contenidos de la caja derecha */
-main > :nth-child(2) > img{
+main > :nth-child(2) > section > div > img{
     width: 150px;
     height: 150px;
 }
 
+/* Contenedor que contienes otros contenedores de imagenes */
+main > :nth-child(2) > section{
+    position: absolute; /* Se le pone posicionamiento absoluto para poder mover el contenedor principal libremente por el contenedor padre*/
+    top: 50%; /* Partiendo de la esquina del contenedor padre, movemos la caja 50% hacia abajo */
+    left: 50%; /* Partiendo de la esquina del contenedor padre, movemos la caja 50% hacia la izquierda */
+    transform: translate(-50%,-50%); /* Se hace la translacion del top y left en 50% de caja pero en el sentido opuesto, para centrarlo absolutamente */
+   
+}
+
+
 /* Propriedades de etiquetas globales*/
 p{
     color: wheat;
+}
+
+
+#encabezadoImagenes{
+    font-weight: bolder;
+    position: sticky;
+    top: 0px;
+    color: red;
+    z-index: 1;
+    background-color: black;
+    text-align: center;
 }
