@@ -8,6 +8,11 @@ body{
 
 main{
     background-image: url("../img/background.jpeg");
+    overflow: hidden; /*Si el contenido se sale del tamaño del main, se oculta*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 /* Contenedores anidados */
@@ -34,7 +39,6 @@ main > :nth-child(2){
     float: left;
     position: relative; /* Se le añade posicionamiento relativo para que las cajas con posicionamiento absoluto de adentro se fijen con respecto a este contenedor */
     overflow: scroll;
-    left: 25%;
 }
 
 footer{
@@ -98,6 +102,12 @@ footer > p{
 main > :nth-child(2) > section > div > img{
     width: 150px;
     height: 150px;
+}
+
+main > :nth-child(2) > section > div > .especiales{
+    position: absolute;
+    left: 25%;
+
 }
 
 /* Contenedor que contienes otros contenedores de imagenes */

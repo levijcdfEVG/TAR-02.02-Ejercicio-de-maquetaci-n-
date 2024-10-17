@@ -8,6 +8,7 @@ body{
 
 main{
     background-image: url("../img/background.jpeg");
+
 }
 
 /* Contenedores anidados */
@@ -32,9 +33,8 @@ main > :nth-child(2){
     padding-right: 30px;
     background-color: blue;
     float: left;
-    position: relative; /* Se le añade posicionamiento relativo para que las cajas con posicionamiento absoluto de adentro se fijen con respecto a este contenedor */
-    overflow: scroll;
-    left: 25%;
+    position: fixed; /* Se le añade posicionamiento relativo para que las cajas con posicionamiento absoluto de adentro se fijen con respecto a este contenedor */
+    left: 43%;
 }
 
 footer{
@@ -100,28 +100,26 @@ main > :nth-child(2) > section > div > img{
     height: 150px;
 }
 
+main > :nth-child(2) > section > div > .especiales{
+    position: fixed;
+    left: 95%;
+    background-color: aqua;
+
+}
+
 /* Contenedor que contienes otros contenedores de imagenes */
 main > :nth-child(2) > section{
     position: absolute; /* Se le pone posicionamiento absoluto para poder mover el contenedor principal libremente por el contenedor padre*/
     top: 50%; /* Partiendo de la esquina del contenedor padre, movemos la caja 50% hacia abajo */
     left: 50%; /* Partiendo de la esquina del contenedor padre, movemos la caja 50% hacia la izquierda */
     transform: translate(-50%,-50%); /* Se hace la translacion del top y left en 50% de caja pero en el sentido opuesto, para centrarlo absolutamente */
-   
+    width: 55%;
+    border: 1px solid white;
+    background-color: blueviolet;
 }
 
 
 /* Propriedades de etiquetas globales*/
 p{
     color: wheat;
-}
-
-
-#encabezadoImagenes{
-    font-weight: bolder;
-    position: sticky;
-    top: 0px;
-    color: red;
-    z-index: 1;
-    background-color: black;
-    text-align: center;
 }
