@@ -104,6 +104,7 @@ main > :nth-child(2) > section > div > img{
     height: 150px;
 }
 
+/* Se le ha puesto absolute para que se fusione con la imagen que ya estaba en su sitio */
 main > :nth-child(2) > section > div > .especiales{
     position: absolute;
     left: 25%;
@@ -123,15 +124,4 @@ main > :nth-child(2) > section{
 /* Propriedades de etiquetas globales*/
 p{
     color: wheat;
-}
-
-
-#encabezadoImagenes{
-    font-weight: bolder;
-    position: sticky;
-    top: 0px;
-    color: red;
-    z-index: 1;
-    background-color: black;
-    text-align: center;
 }
