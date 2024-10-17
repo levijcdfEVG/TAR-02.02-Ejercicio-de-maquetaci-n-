@@ -124,14 +124,3 @@ main > :nth-child(2) > section{
 p{
     color: wheat;
 }
-
-
-#encabezadoImagenes{
-    font-weight: bolder;
-    position: sticky;
-    top: 0px;
-    color: red;
-    z-index: 1;
-    background-color: black;
-    text-align: center;
-}
