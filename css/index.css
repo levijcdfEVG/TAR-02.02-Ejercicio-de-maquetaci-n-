@@ -86,7 +86,7 @@ footer > p{
 
 
 /* Contenidos de la caja derecha */
-main > :nth-child(2) > img{
+body > :nth-child(2) > img{
     width: 150px;
     height: 150px;
 }
